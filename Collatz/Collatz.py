@@ -1,4 +1,4 @@
-result={'number':None,'max_length':0}
+result={'n':None,'max_length':0}
 for n in range(1,100001):
     result[n] = 1
     number = n
@@ -10,10 +10,5 @@ for n in range(1,100001):
         result[n] += 1 
     if result['max_length'] < result[n]:
                 result['max_length'] = result[n]
-                result['number'] = n 
-print(result['number'])
-
-
-
-    
-
+                result['n'] = n 
+print(result['n'])
